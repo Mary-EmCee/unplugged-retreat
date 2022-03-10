@@ -503,10 +503,62 @@ contact-content p {
       width: 100%;
     }
     }
-    @media only screen and (min-width: 1200px) {
-    /*Desktop styles here*/
-    }
 
+    /********DESKTOP STYLES ********/
+    @media only screen and (min-width: 1200px) {
+    
+      /* General styles */
+      .content-wrapper {
+        max-width: 960px;
+      }
+
+      /* hero */
+
+      .hero-area h1 {
+        width: 60%;
+      }
+
+      /* aside */
+
+      aside .content-wrapper{
+        justify-content: space-evenly;
+        
+      }
+
+      aside .content-wrapper .form-description,
+      aside .content-wrapper .form {        
+        width: 33%;
+      }
+
+      /* features */
+
+      .features h2 {
+        width: 90%;
+      }
+      .features article {
+        flex-basis: 33%;
+      }
+
+      /* reviews */
+      
+      .reviews article div {
+        width: 42%;
+      }
+
+      /* ABOUT PAGE */
+
+      .mission h2,
+      .contact-section .content-wrapper h2 {
+          width: 95%;
+      }
+
+      /* FAQ PAGE */
+
+      .faq h2 {
+        width: 100%;
+      }
+
+  }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
